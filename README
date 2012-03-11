@@ -1,0 +1,8 @@
+
+Learning to use ember.js with a simple survey example
+
+The sample survey has two sections A and B
+Each survey question has 5 answer choices (A..E) 
+As you pick a different answer the points for a question we update a section points total and a survey points total using ember bindings.
+
+

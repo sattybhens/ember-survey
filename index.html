@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <script src="js/libs/jquery-1.6.1.min.js"></script>
+    <script src="js/libs/ember-0.9.5.js"></script>
+
+    <script type="text/x-handlebars" data-template-name="section-a-questions">
+      <h1>Section A Points => {{SurveyPoints.sectionAPoints}}</h1>
+      <form>
+        <legend>Section A Questions</legend>
+        {{#each questions}}
+        <fieldset id="section-a" >
+          <p>
+          <label>{{unbound this.text}}</label>            
+          </p>
+          <p>
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-a"
+          value = "0"
+          checked = "checked" />
+          <label for = "id-q1">A</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-b"
+          value = "1" />
+          <label for = "q1-b">B</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-c"
+          value = "2" />
+          <label for = "q1-c">C</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-d"
+          value = "3" />
+          <label for = "q1-d">D</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-e"
+          value = "4" />
+          <label for = "q1-e">E</label>
+          </p>       
+        </fieldset>     
+        {{/each}}
+      </form>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="section-b-questions">
+      <h1>Section B Points => {{SurveyPoints.sectionBPoints}}</h1>
+      <form>
+        <legend>Section B Questions</legend>
+        {{#each questions}}
+        <fieldset id="section-b" >
+          <p>
+          <label>{{unbound this.text}}</label>            
+          </p>
+          <p>
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-a"
+          value = "0"
+          checked = "checked" />
+          <label for = "id-q1">A</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-b"
+          value = "1" />
+          <label for = "q1-b">B</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-c"
+          value = "2" />
+          <label for = "q1-c">C</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-d"
+          value = "3" />
+          <label for = "q1-d">D</label>
+
+          <input type = "radio"
+          name = "{{unbound this.name}}"
+          id = "{{unbound this.name}}-e"
+          value = "4" />
+          <label for = "q1-e">E</label>
+          </p>       
+        </fieldset>     
+        {{/each}}
+      </form>
+    </script>
+
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+
+    <script type="text/x-handlebars">
+      <h1>Survey Points => {{SurveyPoints.totalPoints}}</h1>
+    </script>
+
+    <div id="section-a-questions"></div>
+    <div id="section-b-questions"></div>
+  </body>
+</html>
